@@ -1,0 +1,73 @@
+﻿body {
+    height: 100vh;
+    background-image: url('../slike/slika.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Haettenschweiler', sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+}
+
+.btn-primary {
+    display: none;
+}
+
+.round-button {
+    display: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto 0;
+    display: block;
+}
+
+    .round-button:hover {
+        background-color: #2980b9;
+    }
+
+    .round-button a {
+        text-decoration: none;
+    }
+
+.text-danger {
+    color: red;
+}

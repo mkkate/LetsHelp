@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar DEMO</title>
+    <link rel="stylesheet" href="~/css/home.css">
+</head>
+
+<body>
+    <main>
+        <h1>WELCOME!</h1>
+        <p class="P">
+            We help those in need find the volunteers; anyone can be a volunteer- and everyone can get help!
+            With our service, those in need can find volunteers in close proximity to them, anytime and for anything.
+            <br>
+            <br>
+            Let's bring each other closer!
+        </p>
+        <h1>Contributions from our community</h1>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext" style="text-decoration:color(rgba(255, 0, 0, 0.5));"></div>
+                <img src="~/slike/whatsapp image 2023-12-09 at 17.43.52 (1).jpeg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="~/slike/whatsapp image 2023-12-09 at 17.43.53 (1).jpeg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="~/slike/whatsapp image 2023-12-09 at 17.43.53 (2).jpeg" style="width:100%" />
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="~/slike/whatsapp image 2023-12-09 at 17.43.53.jpeg" style="width:100%" />
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </main>
+
+    <a onclick="location.href='@Url.Action("Index", "About")'">
+        <button class="round-button">Contact us today to help</button>
+    </a>
+
+
+
+</body>
+
+
+<script src="~/js/home.js"></script>
+

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\home.css" />
+    <Content Remove="wwwroot\js\home.js" />
+    <Content Remove="wwwroot\Slike\SLIKA.jpeg" />
+    <Content Remove="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.52 (1).jpeg" />
+    <Content Remove="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.52 (2).jpeg" />
+    <Content Remove="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53 (1).jpeg" />
+    <Content Remove="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53 (2).jpeg" />
+    <Content Remove="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Slike\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\home.css" />
+    <None Include="wwwroot\js\home.js" />
+    <None Include="wwwroot\Slike\SLIKA.jpeg" />
+    <None Include="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.52 (1).jpeg" />
+    <None Include="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.52 (2).jpeg" />
+    <None Include="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53 (1).jpeg" />
+    <None Include="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53 (2).jpeg" />
+    <None Include="wwwroot\Slike\WhatsApp Image 2023-12-09 at 17.43.53.jpeg" />
+  </ItemGroup>
+
+</Project>

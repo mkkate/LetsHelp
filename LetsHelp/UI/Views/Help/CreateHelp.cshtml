@@ -1,0 +1,81 @@
+﻿@model UI.Models.HelpModel
+
+@{
+    ViewData["Title"] = "CreateHelp";
+}
+
+<body>
+    <h1>Make Your Request</h1>
+    <link href="~/css/CreateHelp.css" rel="stylesheet" />
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CreateHelp">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <p>Help ID</p>
+                <div class="form-group">
+                    <label asp-for="HelpId" class="control-label"></label>
+                    <input asp-for="HelpId" class="form-control" />
+                    <span asp-validation-for="HelpId" class="text-danger"></span>
+                </div>
+                <p>Title of Request</p>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <p>Description</p>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>Type of Assistance Needed</p>
+                    <label asp-for="Type" class="control-label"></label>
+                    <input asp-for="Type" class="form-control" />
+                    <span asp-validation-for="Type" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <p>When Do You Need Help?</p>
+                    <label asp-for="DateFrom" class="control-label"></label>
+                    <input asp-for="DateFrom" class="form-control" />
+                    <span asp-validation-for="DateFrom" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateTo" class="control-label"></label>
+                    <input asp-for="DateTo" class="form-control" />
+                    <span asp-validation-for="DateTo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Municipality" class="control-label"></label>
+                    <input asp-for="Municipality" class="form-control" />
+                    <span asp-validation-for="Municipality" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KoPomazeIme" class="control-label"></label>
+                    <input asp-for="KoPomazeIme" class="form-control" />
+                    <span asp-validation-for="KoPomazeIme" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KoPomazePrezime" class="control-label"></label>
+                    <input asp-for="KoPomazePrezime" class="form-control" />
+                    <span asp-validation-for="KoPomazePrezime" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit"
+                           value="Create"
+                           class="round-button" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+

@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    <link rel="stylesheet" href="~/css/oglasi.css">
+</head>
+
+<body>
+    <main>
+        <div class="help">
+
+            <h1>Do you know someone who needs help?</h1>
+
+            <div class="card-footer">
+                <button type="submit"
+                        class="round-button"
+                        onclick="window.location.href='/Help/ListAllHelps'">
+                    What We Did So Far
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <button type="submit"
+                        class="round-button"
+                        onclick="window.location.href='/Help/CreateHelp'">
+                    Get Help
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+
